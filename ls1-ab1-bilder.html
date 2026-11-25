@@ -53,7 +53,7 @@ p{margin:0}
   <a class="back" href="index.html#ls-1">← Zurück zu Lernsituation 1</a>
   <span class="kicker">LF 1.1 · AB 1 · Betriebstypologie</span>
   <h1>Bilderrondell: Welche Betriebe passen zusammen?</h1>
-  <p class="task"><b>So geht’s:</b> Klicken Sie sich durch alle zehn Bilder. Überlegen Sie bei jedem Bild: Was macht dieser Betrieb? Bilden Sie danach auf dem Arbeitsblatt Gruppen und finden Sie für jede Gruppe eine Überschrift.</p>
+  <p class="task"><b>So geht’s:</b> Klicken Sie sich durch alle 20 Bilder. Überlegen Sie bei jedem Bild: Was macht dieser Betrieb? Bilden Sie danach auf dem Arbeitsblatt Gruppen und finden Sie für jede Gruppe eine Überschrift.</p>
 
   <section class="rondell" aria-roledescription="Karussell" aria-label="Bilder von Betrieben">
     <div class="stage" id="stage"></div>
@@ -65,7 +65,7 @@ p{margin:0}
     <div class="dots" id="dots" role="group" aria-label="Bild auswählen"></div>
   </section>
 
-  <p class="note">Logos von BMW, EDEKA, Netto, Audi und Deutsche Bank: Markenzeichen der jeweiligen Unternehmen, Darstellung nach Simple Icons (CC0), nur für den Unterricht. Erdbeerstand, Imker, Tischlerei, Kanzlei und Landwirt: eigene Zeichnungen; Tischlerei und Kanzlei sind ausgedacht.</p>
+  <p class="note">Logos von BMW, EDEKA, Netto, Audi, Deutsche Bank, BVG, Nike, Deutsche Bahn und IKEA: Markenzeichen der jeweiligen Unternehmen, Darstellung nach Simple Icons (CC0), nur für den Unterricht. Alle anderen Bilder sind eigene Zeichnungen. Für BSR, Polizei Berlin, Vivantes, DRK-Pflegedienst, Snipes und Globetrotter zeigen sie das Tätigkeitsfeld, nicht das echte Logo. Tischlerei und Kanzlei sind ausgedacht.</p>
 </div>
 <script>
 (function(){
@@ -79,7 +79,17 @@ p{margin:0}
     ["netto.svg","Netto","Logo von Netto"],
     ["audi.svg","Audi","Logo von Audi"],
     ["deutsche-bank.svg","Deutsche Bank","Logo der Deutschen Bank"],
-    ["landwirt.svg","Landwirt","Ein Landwirt mit Heugabel vor seinem Traktor und einem Feld"]
+    ["landwirt.svg","Landwirt","Ein Landwirt mit Heugabel vor seinem Traktor und einem Feld"],
+    ["bvg.svg","BVG","Logo der BVG"],
+    ["stadtreinigung.svg","BSR","Ein orangefarbenes Müllfahrzeug der Stadtreinigung"],
+    ["nike.svg","Nike","Logo von Nike"],
+    ["polizei.svg","Polizei Berlin","Ein Polizeiauto"],
+    ["krankenhaus.svg","Vivantes-Klinikum","Ein Krankenhausgebäude"],
+    ["pflegedienst.svg","DRK-Pflegedienst","Eine Pflegekraft neben einem Auto des Pflegedienstes"],
+    ["sneaker-laden.svg","Snipes","Ein Sneaker-Laden mit Turnschuhen im Regal"],
+    ["outdoor-laden.svg","Globetrotter","Zelt und Rucksack vor Bergen: Outdoor-Ausrüstung"],
+    ["deutsche-bahn.svg","Deutsche Bahn","Logo der Deutschen Bahn"],
+    ["ikea.svg","IKEA","Logo von IKEA"]
   ];
   var stage=document.getElementById("stage"), dots=document.getElementById("dots"), i=0, imgs=[], btns=[];
   items.forEach(function(it,k){

@@ -24,7 +24,7 @@
 <g stroke="#5c645c" stroke-width="1"><path d="M114 108h56M114 118h56M114 128h56M114 138h56"/><path d="M122 100v48M134 100v48M146 100v48M158 100v48"/></g>
 <circle cx="132" cy="120" r="3" fill="#fbfbf6"/><circle cx="152" cy="120" r="3" fill="#fbfbf6"/>
 <!-- Bienen -->
-<g id="b"><ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c948"/><path d="M-3 -6v12M3 -6v12" stroke="#2b2b2b" stroke-width="2.5"/><ellipse cx="-2" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/><ellipse cx="4" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/></g>
+<defs><g id="b"><ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c948"/><path d="M-3 -6v12M3 -6v12" stroke="#2b2b2b" stroke-width="2.5"/><ellipse cx="-2" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/><ellipse cx="4" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/></g></defs>
 <use href="#b" x="230" y="70"/><use href="#b" x="290" y="100"/><use href="#b" x="345" y="80"/><use href="#b" x="210" y="115"/><use href="#b" x="70" y="60"/>
 <path d="M230 70c20 10 30 0 40 20s20 10 20 10" fill="none" stroke="#7a5230" stroke-width="1.5" stroke-dasharray="3 5"/>
 </svg>

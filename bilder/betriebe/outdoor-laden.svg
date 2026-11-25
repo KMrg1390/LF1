@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<rect width="400" height="300" fill="#dcecf2"/>
+<path d="M0 220l90-110 60 60 70-100 90 120 90-40v150H0z" fill="#8fb3a0"/>
+<path d="M220 70l-24 34 16-6 8 12 10-14 14 8z" fill="#ffffff"/>
+<rect y="226" width="400" height="74" fill="#6f9a6a"/>
+<!-- Zelt -->
+<path d="M60 236l70-96 70 96z" fill="#e8892c"/><path d="M130 140l-14 96h28z" fill="#a85d16"/>
+<!-- Rucksack -->
+<rect x="246" y="132" width="78" height="100" rx="20" fill="#2f6f8f"/>
+<rect x="258" y="176" width="54" height="40" rx="10" fill="#26596f"/>
+<path d="M266 132c0-22 38-22 38 0" fill="none" stroke="#26596f" stroke-width="8"/>
+<rect x="246" y="148" width="78" height="10" fill="#e8892c"/>
+<path d="M324 160l18 8v44" stroke="#c9d6dc" stroke-width="6" fill="none"/>
+<text x="200" y="34" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#2f6f8f" text-anchor="middle">Outdoor-Ausrüstung</text>
+</svg>
