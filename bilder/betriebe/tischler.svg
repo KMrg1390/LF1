@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<rect width="400" height="300" fill="#f6efe4"/>
+<circle cx="200" cy="130" r="86" fill="#8a5a32"/>
+<circle cx="200" cy="130" r="76" fill="none" stroke="#f6efe4" stroke-width="3"/>
+<g fill="none" stroke="#a8743f" stroke-width="2.5" opacity=".9"><circle cx="200" cy="130" r="18"/><circle cx="200" cy="130" r="34"/><circle cx="200" cy="130" r="52"/></g>
+<!-- Säge und Hobel gekreuzt -->
+<g transform="rotate(-35 200 130)">
+<rect x="132" y="120" width="120" height="20" fill="#d9dde0"/>
+<path d="M132 140h120" stroke="#9aa1a6" stroke-width="2"/>
+<path d="M136 140l4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6 4-6 4 6" fill="#d9dde0"/>
+<rect x="252" y="112" width="30" height="36" rx="10" fill="#f2c230"/>
+<rect x="260" y="122" width="14" height="16" rx="5" fill="#8a5a32"/>
+</g>
+<g transform="rotate(35 200 130)">
+<rect x="160" y="138" width="80" height="24" rx="4" fill="#f2c230"/>
+<path d="M176 138c0-18 14-26 28-26 10 0 18 6 18 14v12" fill="#5a3a22"/>
+<rect x="196" y="126" width="6" height="14" fill="#9aa1a6"/>
+</g>
+<text x="200" y="252" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#5a3a22" text-anchor="middle">Tischlerei</text>
+<text x="200" y="280" font-family="Georgia, serif" font-size="17" fill="#8a5a32" text-anchor="middle" letter-spacing="3">HOLZWERK BERLIN</text>
+</svg>

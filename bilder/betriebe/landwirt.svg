@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<rect width="400" height="300" fill="#d7ecf7"/>
+<circle cx="60" cy="58" r="24" fill="#ffd95a"/>
+<path d="M0 170c60-30 140-34 200-18s140 10 200-12v160H0z" fill="#a9d27a"/>
+<path d="M0 200c80-24 160-20 240-6s120 4 160-8v114H0z" fill="#e7c766"/>
+<g stroke="#c9a643" stroke-width="3"><path d="M20 230l30-26M70 238l30-30M120 244l30-30M300 236l30-30M350 240l30-28"/></g>
+<!-- Traktor -->
+<rect x="190" y="170" width="120" height="50" rx="8" fill="#3f9b3a"/>
+<rect x="250" y="120" width="60" height="56" rx="6" fill="#3f9b3a"/>
+<rect x="260" y="130" width="40" height="34" rx="4" fill="#cfe8f5"/>
+<rect x="206" y="146" width="10" height="30" fill="#4a4a4a"/>
+<circle cx="285" cy="226" r="40" fill="#2b2b2b"/><circle cx="285" cy="226" r="18" fill="#f2c230"/>
+<circle cx="208" cy="236" r="24" fill="#2b2b2b"/><circle cx="208" cy="236" r="10" fill="#f2c230"/>
+<!-- Landwirt -->
+<rect x="86" y="150" width="50" height="70" rx="12" fill="#3d6ea8"/>
+<rect x="92" y="150" width="38" height="40" fill="#5b8bc4"/>
+<path d="M92 150l10 24M130 150l-10 24" stroke="#2c5384" stroke-width="5"/>
+<rect x="90" y="214" width="18" height="40" rx="5" fill="#3d6ea8"/><rect x="114" y="214" width="18" height="40" rx="5" fill="#3d6ea8"/>
+<rect x="86" y="250" width="24" height="10" rx="4" fill="#5a3a22"/><rect x="112" y="250" width="24" height="10" rx="4" fill="#5a3a22"/>
+<circle cx="111" cy="128" r="20" fill="#f2c9a0"/>
+<path d="M84 114c6-14 48-14 54 0z" fill="#d9a441"/><ellipse cx="111" cy="114" rx="36" ry="6" fill="#d9a441"/>
+<circle cx="104" cy="130" r="2.5" fill="#2b2b2b"/><circle cx="118" cy="130" r="2.5" fill="#2b2b2b"/>
+<path d="M104 138q7 5 14 0" stroke="#2b2b2b" stroke-width="2" fill="none"/>
+<!-- Heugabel -->
+<path d="M150 120v136" stroke="#8a5a32" stroke-width="5"/>
+<path d="M140 104v18h20v-18M150 104v18" stroke="#8a8a8a" stroke-width="4" fill="none"/>
+<path d="M136 170h16" stroke="#f2c9a0" stroke-width="10" stroke-linecap="round"/>
+</svg>

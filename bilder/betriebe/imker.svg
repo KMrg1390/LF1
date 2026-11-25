@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<rect width="400" height="300" fill="#eaf4dc"/>
+<rect y="232" width="400" height="68" fill="#8cc063"/>
+<g fill="#f7c948"><circle cx="40" cy="236" r="6"/><circle cx="80" cy="244" r="5"/><circle cx="360" cy="240" r="6"/><circle cx="320" cy="250" r="5"/></g>
+<!-- Bienenstock -->
+<rect x="235" y="150" width="110" height="86" fill="#e0a33c"/>
+<rect x="235" y="150" width="110" height="28" fill="#c98a2a"/>
+<rect x="235" y="206" width="110" height="4" fill="#b37722"/>
+<rect x="228" y="138" width="124" height="16" rx="3" fill="#7a5230"/>
+<rect x="278" y="222" width="24" height="6" rx="3" fill="#4a3020"/>
+<rect x="245" y="236" width="10" height="14" fill="#7a5230"/><rect x="325" y="236" width="10" height="14" fill="#7a5230"/>
+<!-- Imker im Schutzanzug -->
+<rect x="104" y="140" width="76" height="96" rx="24" fill="#fbfbf6" stroke="#c9cbb8" stroke-width="3"/>
+<rect x="112" y="226" width="24" height="30" rx="6" fill="#fbfbf6" stroke="#c9cbb8" stroke-width="3"/>
+<rect x="148" y="226" width="24" height="30" rx="6" fill="#fbfbf6" stroke="#c9cbb8" stroke-width="3"/>
+<rect x="112" y="252" width="26" height="8" rx="3" fill="#4a3020"/><rect x="146" y="252" width="26" height="8" rx="3" fill="#4a3020"/>
+<path d="M180 168l42-14" stroke="#fbfbf6" stroke-width="18" stroke-linecap="round"/>
+<path d="M180 168l42-14" stroke="#c9cbb8" stroke-width="18" stroke-linecap="round" opacity=".3"/>
+<rect x="216" y="136" width="10" height="34" rx="3" fill="#e0a33c" stroke="#b37722" stroke-width="2"/>
+<!-- Hut mit Schleier -->
+<ellipse cx="142" cy="96" rx="52" ry="10" fill="#f0ead2"/>
+<rect x="116" y="70" width="52" height="28" rx="10" fill="#f0ead2"/>
+<rect x="110" y="98" width="64" height="52" rx="14" fill="#3a3f3a" opacity=".85"/>
+<g stroke="#5c645c" stroke-width="1"><path d="M114 108h56M114 118h56M114 128h56M114 138h56"/><path d="M122 100v48M134 100v48M146 100v48M158 100v48"/></g>
+<circle cx="132" cy="120" r="3" fill="#fbfbf6"/><circle cx="152" cy="120" r="3" fill="#fbfbf6"/>
+<!-- Bienen -->
+<g id="b"><ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c948"/><path d="M-3 -6v12M3 -6v12" stroke="#2b2b2b" stroke-width="2.5"/><ellipse cx="-2" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/><ellipse cx="4" cy="-8" rx="5" ry="4" fill="#ffffff" opacity=".85"/></g>
+<use href="#b" x="230" y="70"/><use href="#b" x="290" y="100"/><use href="#b" x="345" y="80"/><use href="#b" x="210" y="115"/><use href="#b" x="70" y="60"/>
+<path d="M230 70c20 10 30 0 40 20s20 10 20 10" fill="none" stroke="#7a5230" stroke-width="1.5" stroke-dasharray="3 5"/>
+</svg>

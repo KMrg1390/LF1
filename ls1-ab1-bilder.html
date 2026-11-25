@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bilderrondell Betriebe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap">
+<style>
+:root{
+  --bg:#f6f7f2; --surface:#ffffff; --fg:#2b3229; --muted:#5f6a5c; --line:#dde3d6;
+  --c:#6f9a6a; --c-soft:#e6efe2;
+  --font-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --font-body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1b201b; --surface:#232a23; --fg:#e7ece3; --muted:#a8b3a3; --line:#364036; --c:#9cc596; --c-soft:#2a3629; color-scheme:dark }}
+:root[data-theme="dark"]{--bg:#1b201b; --surface:#232a23; --fg:#e7ece3; --muted:#a8b3a3; --line:#364036; --c:#9cc596; --c-soft:#2a3629; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:1.0625rem;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:46rem;margin:0 auto;padding-block:2rem 3rem;display:grid;gap:1.25rem}
+h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.15;margin:0;text-wrap:balance}
+p{margin:0}
+.back{justify-self:start;font-weight:700;text-decoration:none;color:var(--muted);padding:.4rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.back:hover{color:var(--fg)}
+.kicker{color:var(--c);font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.task{background:var(--c-soft);border-radius:12px;padding:.85rem 1rem}
+.task b{color:var(--c)}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:6px}
+
+.rondell{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1rem;display:grid;gap:.9rem}
+.stage{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;max-width:100%;background:#fff}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:opacity .25s ease}
+.stage img[hidden]{display:block!important;opacity:0;pointer-events:none}
+@media (prefers-reduced-motion: reduce){.stage img{transition:none}}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.nav{width:3rem;height:3rem;border-radius:50%;border:1.5px solid var(--c);background:transparent;color:var(--c);cursor:pointer;display:grid;place-items:center;flex:none}
+.nav:hover{background:var(--c-soft)}
+.nav svg{width:1.4rem;height:1.4rem}
+.caption{text-align:center;min-width:0}
+.caption strong{display:block;font-family:var(--font-display);font-size:1.35rem;line-height:1.2}
+.caption span{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+.dots{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem}
+.dots button{width:.8rem;height:.8rem;border-radius:50%;border:1.5px solid var(--c);background:transparent;padding:0;cursor:pointer}
+.dots button[aria-current="true"]{background:var(--c)}
+.note{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html#ls-1">← Zurück zu Lernsituation 1</a>
+  <span class="kicker">LF 1.1 · AB 1 · Betriebstypologie</span>
+  <h1>Bilderrondell: Welche Betriebe passen zusammen?</h1>
+  <p class="task"><b>So geht’s:</b> Klicken Sie sich durch alle zehn Bilder. Überlegen Sie bei jedem Bild: Was macht dieser Betrieb? Bilden Sie danach auf dem Arbeitsblatt Gruppen und finden Sie für jede Gruppe eine Überschrift.</p>
+
+  <section class="rondell" aria-roledescription="Karussell" aria-label="Bilder von Betrieben">
+    <div class="stage" id="stage"></div>
+    <div class="bar">
+      <button class="nav" id="prev" type="button" aria-label="Vorheriges Bild"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+      <div class="caption" aria-live="polite"><strong id="name"></strong><span id="count"></span></div>
+      <button class="nav" id="next" type="button" aria-label="Nächstes Bild"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    </div>
+    <div class="dots" id="dots" role="group" aria-label="Bild auswählen"></div>
+  </section>
+
+  <p class="note">Logos von BMW, EDEKA, Netto, Audi und Deutsche Bank: Markenzeichen der jeweiligen Unternehmen, Darstellung nach Simple Icons (CC0), nur für den Unterricht. Erdbeerstand, Imker, Tischlerei, Kanzlei und Landwirt: eigene Zeichnungen; Tischlerei und Kanzlei sind ausgedacht.</p>
+</div>
+<script>
+(function(){
+  var items=[
+    ["bmw.svg","BMW","Logo von BMW"],
+    ["erdbeerstand.svg","Erdbeerstand","Ein Erdbeerstand in Form einer großen Erdbeere"],
+    ["edeka.svg","EDEKA","Logo von EDEKA"],
+    ["imker.svg","Imker","Ein Imker im Schutzanzug neben einem Bienenstock"],
+    ["tischler.svg","Tischlerei","Logo einer Tischlerei mit Säge und Hobel"],
+    ["rechtsanwalt.svg","Rechtsanwalt","Logo einer Anwaltskanzlei mit einer Waage"],
+    ["netto.svg","Netto","Logo von Netto"],
+    ["audi.svg","Audi","Logo von Audi"],
+    ["deutsche-bank.svg","Deutsche Bank","Logo der Deutschen Bank"],
+    ["landwirt.svg","Landwirt","Ein Landwirt mit Heugabel vor seinem Traktor und einem Feld"]
+  ];
+  var stage=document.getElementById("stage"), dots=document.getElementById("dots"), i=0, imgs=[], btns=[];
+  items.forEach(function(it,k){
+    var img=new Image(); img.src="bilder/betriebe/"+it[0]; img.alt=it[2]; img.hidden=k!==0; img.decoding="async";
+    stage.appendChild(img); imgs.push(img);
+    var b=document.createElement("button"); b.type="button"; b.setAttribute("aria-label","Bild "+(k+1)+": "+it[1]);
+    b.addEventListener("click",function(){go(k)}); dots.appendChild(b); btns.push(b);
+  });
+  function go(k){
+    i=(k+items.length)%items.length;
+    imgs.forEach(function(im,n){im.hidden=n!==i});
+    btns.forEach(function(b,n){b.setAttribute("aria-current",n===i?"true":"false")});
+    document.getElementById("name").textContent=items[i][1];
+    document.getElementById("count").textContent="Bild "+(i+1)+" von "+items.length;
+  }
+  document.getElementById("prev").addEventListener("click",function(){go(i-1)});
+  document.getElementById("next").addEventListener("click",function(){go(i+1)});
+  document.addEventListener("keydown",function(e){if(e.key==="ArrowLeft")go(i-1);if(e.key==="ArrowRight")go(i+1)});
+  var x0=null;
+  stage.addEventListener("touchstart",function(e){x0=e.touches[0].clientX},{passive:true});
+  stage.addEventListener("touchend",function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(dx<0?i+1:i-1);x0=null});
+  go(0);
+})();
+</script>
+</body>
+</html>
