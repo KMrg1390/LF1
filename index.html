@@ -113,7 +113,11 @@ h2{font-size:clamp(1.5rem,3.2vw,2rem);font-weight:700}
 main .rail::after{display:none}
 main h2:focus{outline:none}
 main .extra{margin-left:0}
-footer{border-top:1px solid var(--line);padding-block:1.5rem 3rem;color:var(--muted);font-size:.9rem;display:grid;gap:.3rem}
+footer{border-top:1px solid var(--line);padding-block:1.5rem 3rem;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.logo{background:#ffffff;border-radius:10px;padding:.5rem .75rem;display:block;flex:none}
+.logo img{display:block;height:3.25rem;width:auto}
+.foot-text{display:grid;gap:.3rem;min-width:0;flex:1 1 16rem}
+.copy{font-weight:700;color:var(--fg)}
 @media (max-width:520px){.ls{grid-template-columns:2.5rem minmax(0,1fr);gap:0 .85rem}.num{width:2.5rem;height:2.5rem;font-size:1.1rem}}
 </style>
 
@@ -222,8 +226,12 @@ footer{border-top:1px solid var(--line);padding-block:1.5rem 3rem;color:var(--mu
 </main>
 
 <footer>
-  <span>Lernfeld 1 · Integrierte Berufsausbildungsvorbereitung (IBA)</span>
-  <span>Die Arbeitsblätter sind Word-Dateien (.docx). Sie können sie am Computer ausfüllen oder ausdrucken.</span>
+  <span class="logo"><img src="bilder/logo-hss.png" alt="Hermann-Scheer-Schule, OSZ Wirtschaft" width="600" height="245"></span>
+  <div class="foot-text">
+    <span>Lernfeld 1 · Integrierte Berufsausbildungsvorbereitung (IBA)</span>
+    <span>Die Arbeitsblätter sind Word-Dateien (.docx). Sie können sie am Computer ausfüllen oder ausdrucken.</span>
+    <span class="copy">© Dnk und Mrg</span>
+  </div>
 </footer>
 </div>
 
